@@ -58,7 +58,8 @@
     },
 
     'date_tostring' : function (v) {
-      return moment(Number(v)).format('ddd MMM DD HH:mm:ss ZZ YYYY');
+      # return moment(Number(v)).format('ddd MMM DD HH:mm:ss ZZ YYYY');
+      return Number(v).toLocaleString();
     },
 
     'format_compile_info' : function (v) {
